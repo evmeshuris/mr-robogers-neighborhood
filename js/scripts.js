@@ -1,13 +1,9 @@
-// Utility Logic
-
 function noInputtedNumber(passage) {
   if (passage.trim().lenght === 0) {
     return alert("Please enter the number");
   }
 }
-// Business Logic
 
-//get array from a number input// input 5 - [0,1,2,3,4,5]
 function arrayOfNumbers(passage) {
 const numberInput = passage;
 let arrayNumber = [];
@@ -17,16 +13,16 @@ let arrayNumber = [];
   let totalMix = [];
   arrayNumber.forEach(function(digit) {
     if (String(digit).slice(-1) === '1') {
-      totalMix.push("Beep!");
+      totalMix.push("Beep!, ");
     }
     else if (String(digit).slice(-1) === '2') {
-      totalMix.push("Boop!");
+      totalMix.push("Boop!, ");
     }
     else if (String(digit).slice(-1) === '3') {
-      totalMix.push("Won't you be my neighbor?");
+      totalMix.push("Won't you be my neighbor?, ");
     }
     else {
-      totalMix.push(digit + "");
+      totalMix.push(digit + ", ");
     }
 
   });
