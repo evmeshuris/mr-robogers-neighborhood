@@ -27,9 +27,7 @@ _This is programming language suggester will give a result of what language you 
 
 ## Known Bugs
 
-* _Alert does not work_
-* _IF statement logic is incorrect_
-
+* _No known bugs_
 
 ## License
 
@@ -41,32 +39,27 @@ Copyright (c) _2022_ _Evgeniya Meshuris_
 
 Specs
 
-Return an Alert("Enter the number") if no number was given
-Count up to entered number
-Check entered numbers if they end with 3, if true return "Won't you be my neighbor?"
-Check entered numbers if they end with 2, if true return "Boop!"
-Check entered numbers if they end with 1, of true return "Beep!"
-Return string mixString
+1. Return an Alert("Enter the number") if no number was given
+1. Count up to entered number
+1. Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+1. Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+1. Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+1. Return string array
 
-Test: "If number not given, return "Please enter a number"" 
-Code: noInputtedNumber() ;
-Expected output: "Please enter a number";
+Tests: 
 
-Test: "When a number is entered, the array will count up to that number" 
-Code: counter("5"); 
-Expected output: ["0","1", "2", "3", "4", "5"];
+* Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+* Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+* Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
 
-arrayOfNumbers()
+Code: `arrayOfNumbers("7")`; 
+Expected output: [`"0", "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7`];
 
-Test: "Check entered numbers if they end with 3, if true return "Won't you be my neighbor?" 
-Code: arrayOfNumbers("23"); 
-Expected output: ["Won't you be my neighbor?"]
+Tests: 
 
-Test: "Check entered numbers if they end with 2, if true return "Boop!" 
-Code: arrayOfNumbers("12"); 
-Expected output: ["boop"];
+  * Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+  * Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+  * Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
 
-Test: "Check entered numbers if they end with 1, of true return "Beep!" 
-Code: arrayOfNumbers("1"); 
-Expected output: ["Beep!"];
-
+Code: `arrayOfNumbers("23")`; 
+Expected output: [`"0", "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?"`]
