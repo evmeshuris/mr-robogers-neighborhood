@@ -27,9 +27,7 @@ _This is programming language suggester will give a result of what language you 
 
 ## Known Bugs
 
-* _Logic in IF statement is not correct_
-* _Alert do not work_
-
+* _No known bugs_
 
 ## License
 
