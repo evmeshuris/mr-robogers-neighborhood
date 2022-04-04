@@ -41,24 +41,27 @@ Copyright (c) _2022_ _Evgeniya Meshuris_
 
 Specs
 
-Return an Alert("Enter the number") if no number was given
-Count up to entered number
-Check entered numbers if they end with 3, if true return "Won't you be my neighbor?"
-Check entered numbers if they end with 2, if true return "Boop!"
-Check entered numbers if they end with 1, of true return "Beep!"
-Return string mixString
+1. Return an Alert("Enter the number") if no number was given
+1. Count up to entered number
+1. Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+1. Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+1. Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+1. Return string array
 
 Tests: 
-  * Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
-  * Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
-  * Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+
+* Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+* Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+* Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
 
 Code: `arrayOfNumbers("7")`; 
 Expected output: [`"0", "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7`];
 
 Tests: 
+
   * Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
   * Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
   * Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+
 Code: `arrayOfNumbers("23")`; 
 Expected output: [`"0", "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?"`]
