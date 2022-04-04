@@ -48,25 +48,17 @@ Check entered numbers if they end with 2, if true return "Boop!"
 Check entered numbers if they end with 1, of true return "Beep!"
 Return string mixString
 
-Test: "If number not given, return "Please enter a number"" 
-Code: noInputtedNumber() ;
-Expected output: "Please enter a number";
+Tests: 
+  * Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+  * Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+  * Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
 
-Test: "When a number is entered, the array will count up to that number" 
-Code: counter("5"); 
-Expected output: ["0","1", "2", "3", "4", "5"];
+Code: `arrayOfNumbers("7")`; 
+Expected output: [`"0", "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7`];
 
-arrayOfNumbers()
-
-Test: "Check entered numbers if they end with 3, if true return "Won't you be my neighbor?" 
-Code: arrayOfNumbers("23"); 
-Expected output: ["Won't you be my neighbor?"]
-
-Test: "Check entered numbers if they end with 2, if true return "Boop!" 
-Code: arrayOfNumbers("12"); 
-Expected output: ["boop"];
-
-Test: "Check entered numbers if they end with 1, of true return "Beep!" 
-Code: arrayOfNumbers("1"); 
-Expected output: ["Beep!"];
-
+Tests: 
+  * Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+  * Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+  * Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+Code: `arrayOfNumbers("23")`; 
+Expected output: [`"0", "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?"`]

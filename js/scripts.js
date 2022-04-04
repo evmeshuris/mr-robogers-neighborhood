@@ -7,13 +7,15 @@ function arrayOfNumbers(passage) {
   let totalMix = [];
   arrayNumber.forEach(function (digit) {
     if (digit.includes("3")) {
-      totalMix.push("Won't you be my neighbor?, ");
+      totalMix.push('"Won\'t you be my neighbor?"');
     } else if (digit.includes("2")) {
-      totalMix.push("Boop!, ");
+      totalMix.push('"Boop!"');
     } else if (digit.includes("1")) {
-      totalMix.push("Beep!, ");
+      totalMix.push('"Beep!"');
+    } else if (digit.includes("0")) {
+      totalMix.push('"0"');
     } else {
-      totalMix.push(digit + ", ");
+      totalMix.push(digit);
     }
   });
   return totalMix;
@@ -28,6 +30,7 @@ $(document).ready(function () {
     }
     const passage = $("#number-passage").val();
     const totalMix = arrayOfNumbers(passage);
-    $("#total-mix").html(totalMix);
+    const returnString = totalMix.join(", ");
+    $("#total-mix").html(returnString);
   });
 });
