@@ -1,8 +1,8 @@
-# _Programming Language Suggester_
+# _Mr. Robogers-Neirborhood_
 
 #### By _**Evgeniya Meshuris**_
 
-#### _This is programming language suggester will give a result of what language you should learn based on your answers._
+#### _A counting programm switches number to words based on logic._
 
 ## Technologies Used
 
@@ -13,7 +13,7 @@
 
 ## Description
 
-_This is programming language suggester will give a result of what language you should learn based on your experience, age and occupation._
+_This website has a single input field. When a user enters a number, it will begin counting. Starting from 0, it will count up to your number, with a few exceptions. When it encounters a 3, it will say "Won't you be my neighbor?", with a 2 it will "Boop!", and with a 1 it will "Beep!"_
 
 ## Setup/Installation Requirements
 
