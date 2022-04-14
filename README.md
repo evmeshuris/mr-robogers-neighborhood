@@ -2,7 +2,7 @@
 
 #### By _**Evgeniya Meshuris**_
 
-#### _A counting programm switches number to words based on logic._
+#### _A counting program switches number to words based on logic._
 
 ## Technologies Used
 
